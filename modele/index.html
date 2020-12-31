@@ -1,25 +1,82 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Adrien LACHHAB </title>
-	<meta charset="utf-8" />
-	<link rel="stylesheet" href="../vue/CSS/style.css">
-</head>
+	<head>
+		<title>Adrien LACHHAB </title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="../vue/CSS/style.css">
+	</head>
 
-<body>
-	<header>
-		<a href=""><img href="../vue/images/" /></a>
-		<a href="">Présentation</a>
-		<a href="">Parcours</a>
-		<a href="">Compétences</a>
-		<a href="">Contact</a>
-	</header>
-	<div id="tableau">
-		<h1>Adrien LACHHAB</h1>
-		<p>Etudiant en informatique</p>
-	</div>
-	
+	<body>
+		<header>
+			<a href=""><img href="../vue/images/" /></a>
+			<a href="#apropos">Présentation</a>
+			<a href="#parcours">Parcours</a>
+			<a href="#competences">Compétences</a>
+			<a href="#contact">Contact</a>
+		</header>
 
-</body>
+		<div id="en_tete">
+			<h1>Adrien LACHHAB</h1>
+			<p>Passioné d'informatique depuis toujours...</p>
+			<input type="button" id="to_presentation" name="to_presentation" value="Plus sur moi !"/>
+		</div>
+		
+		<div id="apropos">
+			<h2>Je suis ...</h2>
+			<div id="presentation">
+				<h3>Un étudiant en informatique</h3>
+				<p>Je m'appelle LACHHAB Adrien et je suis passioné par toute chose qui touche à l'infomatique depuis mon plus jeune age.<br></p>
+				<p>Titulaire d'un DUT informatique edepuis début Juillet 2020, je me suis orienté vers une prépa ATS (Adaptation technicien supérieur), 
+					je m'apprêtre à partir de septembre 2021 effectuer un cursus d'ingénieur par contrat d'apprentissage autour de la cybersécurité<br> </p>
+
+				<p>De ce fait, il me faut signer un contrat d'apprentissage d'une durée de 3 ans.</p>
+
+			</div>
+			<input type="button" name="resume_downloading" id="resume_downloading" value="Mon CV"/>
+		</div>
+
+		<div id="parcours">
+			<h2>Mon parcours</h2>
+			
+			<h3>Formations et diplômes</h3>
+
+			<h3>Expériences professionnelles</h3>
+		</div>
+
+		<div id="competences">
+			<h2>Mes compétences</h2>
+		
+		</div>
+
+
+		<div id="contact">
+			<div id="contact_me">
+				<h2>Me contacter</h2>
+				<form id="dialogbox" name="" method="POST" >
+					<p>Nom</p>
+					<input type="text" placeholder="Votre nom" name="nom" id="nom"/>
+					<p>Adresse e-mail</p>
+					<input type="email" placeholder="Votre adresse mail" name="mail" id="mail"/>
+					<p>Message</p>
+					<textarea id="message" name="message" placeholder="Votre message"> </textarea>
+
+					<input type="submit" placeholder="Envoyer" name="btn_envoyer" id="btn_envoyer" />
+				</form>
+			</div>
+
+			<div id="infos_complemetaires">
+				<h2>Informations complémentaires</h2>
+				<p>Mobilité : Île de France <br> Mail: adrien.lach1@gmail.com <br> Téléphone : 06 59 65 69 46 <br> LinkedIn : 
+					<a href="https://www.linkedin.com/in/adrien-l-15b03b1a5/" id="lien_LinkedinProfile" target="_blanck">Voir mon profil</a></p>
+				
+			</div>
+		</div>
+
+		
+
+		<footer>
+			<p> &copy - Adrien LACHHAB -</p>
+		</footer>
+	</body>
 
 </html>
