@@ -11,25 +11,36 @@ header{
     background-color: #24aa50;
     padding-top: 1%;
     padding-bottom: 1%;
+    
 }
 header a{
-    color: blanchedalmond;
+    color: white;
     font-weight: bold;
     padding-left: 7%;
     padding-right: 7%;
+    font-size: 20px;
 }
 header a:hover{
     /*box-shadow: 2px 2px 2px 2px rgba(0, 0, 255, .2);*/
-    background-color: silver;
+    color: black;
     padding-top: 1.2%;
     padding-bottom: 1.05%;
+    box-shadow:  0 0 4em #24aa50;
+    
 }
 
 .en_tete{
     text-align: center;
+    
 }
 
-#apropos,#parcours,#competences,#contact, footer{
+.en_tete h1{
+    font-size: 50px;
+    color: #24aa50;
+    text-shadow: 0px 5px 0px darkseagreen, 0 15px 1em black, 10px 15px 0.2em black;
+}
+
+#apropos,#parcours,#competences,#contact, footer p{
     width: 50%;
     margin-left: 25%;
 }
@@ -37,5 +48,36 @@ header a:hover{
     text-align: center;
 }
 
+
+#to_presentation,#resume_downloading,#btn_envoyer{
+    border-radius: 2px;
+    background-color: #24aa50;
+    border: none;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+#to_presentation:hover,#resume_downloading:hover,#btn_envoyer:hover{
+    color: black;
+    box-shadow:  0 0 4em #24aa50;
+}
+
+
+
+#apropos,#parcours,#competences,#contact,#contact_me{
+    background-color: beige;
+}
+
+footer{
+    background-color: #24aa50;
+    padding-bottom: 0.5%;
+}
+
+footer p{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
 
 /*<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />*/
