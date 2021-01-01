@@ -8,9 +8,34 @@ a{
 }
 
 header{
-    
+    background-color: #24aa50;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
+header a{
+    color: blanchedalmond;
+    font-weight: bold;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+header a:hover{
+    /*box-shadow: 2px 2px 2px 2px rgba(0, 0, 255, .2);*/
+    background-color: silver;
+    padding-top: 1.2%;
+    padding-bottom: 1.05%;
+}
+
 .en_tete{
     text-align: center;
 }
+
+#apropos,#parcours,#competences,#contact, footer{
+    width: 50%;
+    margin-left: 25%;
+}
+#apropos h2,#parcours h2,#competences h2,#contact_me h2{
+    text-align: center;
+}
+
+
 /*<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />*/
