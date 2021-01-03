@@ -40,7 +40,7 @@ header a:hover{
     text-shadow: 0px 5px 0px darkseagreen, 0 15px 1em black, 10px 15px 0.2em black;
 }
 
-#apropos,#parcours,#competences,#contact, footer p{
+#apropos,#parcours,#competences,#contact,#infos_complemetaires, footer p{
     width: 50%;
     margin-left: 25%;
 }
@@ -64,13 +64,49 @@ header a:hover{
 
 
 
-#apropos,#parcours,#competences,#contact,#contact_me{
+#apropos,#parcours,#competences,#contact_me,#infos_complemetaires{
     background-color: beige;
 }
 
+/*Me contacter*/
+#contact_me #nom,#contact_me #mail{
+    padding-left: 5%;padding-right: 5%;padding-top: 1%;padding-bottom: 1%;
+}
+#dialogbox{
+    margin-left: 50px;
+    width: 50%;
+}
+
+#dialogbox p{
+    margin-bottom: 1px;
+}
+
+#contact_me h3{
+    width: 30%;
+}
+#message{
+    max-width: 353px;
+    min-width: 179px;
+    min-height: 139px;
+    padding-left: 5%;
+    margin-bottom: 10px;
+}
+#infos_complemetaires{
+    height: 113.917px;width: 300px;padding-left: 0px;
+    
+    width: 50%;
+ 
+}
+#infos_complemetaires p{
+    padding-left: 5%;
+    width: 60%;
+}
+
+/* FIN Me contacter*/
 footer{
     background-color: #24aa50;
     padding-bottom: 0.5%;
+    position: static;
 }
 
 footer p{
@@ -79,5 +115,3 @@ footer p{
     font-weight: bold;
     font-size: 20px;
 }
-
-/*<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />*/
