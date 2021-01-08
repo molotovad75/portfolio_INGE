@@ -42,9 +42,12 @@ header a:hover{
     text-shadow: 0px 5px 0px darkseagreen, 0 15px 1em black, 10px 15px 0.2em black;
 }
 
-#apropos,#parcours,#competences,#contact,#infos_complemetaires, footer p{
+#apropos,#parcours,#competences,#contact, footer p{ /*#infos_complemetaires*/
     width: 50%;
     margin-left: 25%;
+}
+.infos_complemetaires{
+    width: 50%;
 }
 #apropos h2,#parcours h2,#competences h2,#contact_me h2{
     text-align: center;
@@ -81,9 +84,10 @@ header a:hover{
 }
 
 
-#apropos,#parcours,#competences,#contact_me,#infos_complemetaires{
+#apropos,#parcours,#competences,#contact_me{
     background-color: beige;
 }
+/* ,#infos_complemetaires */
 
 /*Me contacter*/
 #contact_me #nom,#contact_me #mail{
@@ -108,13 +112,16 @@ header a:hover{
     padding-left: 5%;
     margin-bottom: 10px;
 }
-#infos_complemetaires{
-    height: 113.917px;width: 300px;padding-left: 0px;
-    
+.infos_complemetaires{
+    /* height: 113.917px;
+    width: 300px;
+    padding-left: 0px;
     width: 50%;
- 
+    margin-top: -380px;
+    margin-left: 320px; */
+    
 }
-#infos_complemetaires p{
+.infos_complemetaires p{
     padding-left: 5%;
     width: 60%;
 }
