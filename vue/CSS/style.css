@@ -11,7 +11,8 @@ header{
     background-color: #24aa50;
     padding-top: 1%;
     padding-bottom: 1%;
-    
+    position: sticky;
+    top: 0;
 }
 header a{
     color: white;
@@ -113,13 +114,16 @@ header a:hover{
     margin-bottom: 10px;
 }
 .infos_complemetaires{
-    /* height: 113.917px;
+    height: 113.917px;
     width: 300px;
     padding-left: 0px;
     width: 50%;
-    margin-top: -380px;
-    margin-left: 320px; */
-    
+    margin-left: 320px; 
+    margin-top: 0px;
+    margin-bottom: 0px;
+    top: 752.483px;
+    position: absolute;
+    bottom: 0;
 }
 .infos_complemetaires p{
     padding-left: 5%;
