@@ -13,7 +13,9 @@ header{
     padding-bottom: 1%;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
+
 header a{
     color: white;
     font-weight: bold;
