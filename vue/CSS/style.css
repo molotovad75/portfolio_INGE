@@ -87,7 +87,7 @@ header a:hover{
 }
 
 
-#apropos,#parcours,#competences,#contact_me{
+#apropos,#parcours,#competences,#contact{
     background-color: beige;
 }
 /* ,#infos_complemetaires */
@@ -116,20 +116,27 @@ header a:hover{
     margin-bottom: 10px;
 }
 .infos_complemetaires{
-    height: 113.917px;
+    /* height: 113.917px;
     width: 300px;
     padding-left: 0px;
-    width: 50%;
+    width: 30%;
     margin-left: 320px; 
     margin-top: 0px;
     margin-bottom: 0px;
-    top: 752.483px;
+    top: 1180px;
     position: absolute;
-    bottom: 0;
+    bottom: 0; */
+    margin-top: -380px;
+    margin-left: 300px; 
+    position: relative;
 }
 .infos_complemetaires p{
     padding-left: 5%;
     width: 60%;
+}
+#contact{
+    width: 50%;
+    height: 420px;
 }
 
 /* FIN Me contacter*/
@@ -137,6 +144,7 @@ footer{
     background-color: #24aa50;
     padding-bottom: 0.5%;
     position: static;
+    margin-top: 50px;
 }
 
 footer p{

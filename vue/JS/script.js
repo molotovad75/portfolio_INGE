@@ -1,17 +1,30 @@
-// import { chartJS } from 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.min.js';
 
-var getElemChart = document.getElementById("myChart");
-var myChart=new chartJS(getElemChart,{
-    type:'line',
 
-    data:{
-        labels:["HTML/CSS","JavaScript","FrameworksJS","PHP","Bootstrap","JavaJ2EE"],
-        datasets:[{
-            label:"My first dataset",
-            backgroundColor: red,
-            borderColor: blue,
-            data: [1,5,3,4,8,7]
+let getElemChart = document.getElementById("graph_compétences");
+console.log(getElemChart);
+
+var radar=new Chart(getElemChart,{
+    type:'radar',
+    data: {
+        labels: ['Running', 'Swimming', 'Eating', 'Cycling'],
+        datasets: [{
+            data: [20, 10, 4, 2]
         }]
-    },
-    option:{}
-});
+    }
+    
+})
+
+// var myChart=new chartJS(getElemChart,{
+//     type:'line',
+
+//     data:{
+//         labels:["HTML/CSS","JavaScript","FrameworksJS","PHP","Bootstrap","JavaJ2EE"],
+//         datasets:[{
+//             label:"My first dataset",
+//             backgroundColor: red,
+//             borderColor: blue,
+//             data: [1,5,3,4,8,7]
+//         }]
+//     },
+//     option:{}
+// });{}
