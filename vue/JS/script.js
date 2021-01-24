@@ -1,19 +1,26 @@
 
 
-let getElemChart = document.getElementById("graph_compétences");
+var getElemChart = document.getElementById("graph_competences");
 console.log(getElemChart);
 
 var radar=new Chart(getElemChart,{
     type:'radar',
     data: {
         labels: ['Running', 'Swimming', 'Eating', 'Cycling'],
-        datasets: [{
-            data: [20, 10, 4, 2]
-        }]
-    }
+        datasets: [{data: [20, 10, 4, 2]  }]
+    },
     
+    options = {
+        scale: {
+            angleLines: {
+                display: true
+            },
+            suggestedMin: 50,
+            suggestedMax: 100
+        }
+    }
 })
-
+radar.display=true;
 // var myChart=new chartJS(getElemChart,{
 //     type:'line',
 

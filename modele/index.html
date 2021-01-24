@@ -5,7 +5,7 @@
 		<meta charset="utf-8" />
 		<link rel="stylesheet" href="../vue/CSS/style.css">
 		<link rel="icon" type="image/x-icon" href="../vue/images/logo_eportfolio_sans_fond_blanc.bmp" />
-		
+
 	</head>
 
 	<body>
@@ -25,13 +25,13 @@
 				<input type="button" id="to_presentation" name="to_presentation" value="Plus sur moi !"/>
 			</div>
 		</div>
-		
+
 		<div id="apropos" >
 			<h2>Je suis ...</h2>
 			<div id="presentation">
 				<h3>- Un étudiant en informatique -</h3>
 				<p>Je m'appelle LACHHAB Adrien et je suis passioné par toute chose qui touche à l'infomatique depuis mon plus jeune age.<br></p>
-				<p>Titulaire d'un DUT informatique edepuis début Juillet 2020, je me suis orienté vers une prépa ATS (Adaptation technicien supérieur), 
+				<p>Titulaire d'un DUT informatique edepuis début Juillet 2020, je me suis orienté vers une prépa ATS (Adaptation technicien supérieur),
 					je m'apprêtre à partir de septembre 2021 effectuer un cursus d'ingénieur par contrat d'apprentissage autour de la cybersécurité.<br> </p>
 
 				<p>De ce fait, il me faut signer un contrat d'apprentissage d'une durée de 3 ans.</p>
@@ -40,12 +40,12 @@
 			<div class="apropos">
 				<input type="button" name="resume_downloading" id="resume_downloading" value="Mon CV"/>
 			</div>
-			
+
 		</div>
 
 		<div id="parcours">
 			<h2>Mon parcours</h2>
-			
+
 			<h3>- Formations et diplômes -</h3>
 
 			<h3>- Expériences professionnelles -</h3>
@@ -53,9 +53,45 @@
 
 		<div id="competences">
 			<h2>Mes compétences</h2>
-			<canvas id="graph_compétences" height="400" width="400"></canvas>
-			<script type="text/javascript" src="../vue/JS/script.js" ></script>
+			<input type="" id="dev_logiciel" name="dev_logiciel" placeholder="Développement logiciel"/>
+			<canvas id="graph_competences" height="400" width="400"></canvas>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+			<script>
+			// type="text/javascript" src="../vue/JS/script.js"
+			var getElemChart = document.getElementById('graph_competences').getContext('2d');
+			var myRadarChart = new Chart(getElemChart, 
+				{
+				type: 'radar',
+					data: 
+						{
+						labels: ['JAVA Standard Edition', 'C/C++, C#, VB.net, VBA, Python', 'Git/GitHub', 'MVC, Bridge, décorateur'],
+						labels: ['HTML5/CSS3', 'PHP7, JAVA EE', 'JavaScript', 'Frameworks JS/PHP et bootstrap'],
+						datasets: [{
+							data: [17, 13, 19, 12],
+							label:"Dévelopement logiciel",
+							backgroundColor: 'blue',
+							borderColor:'green',
+							opacity:'50%',
+						},
+						{
+							data: [20, 33, 56, 12],
+							label:"Dévelopement web",
+							backgroundColor: 'green',
+							borderColor:'red',
+							opacity:'50%',
+						}]	
+
+					},
+
+		
+			});
+
+			
+
+			
+			
+			</script>
+
 		</div>
 
 
@@ -77,17 +113,17 @@
 
 			<div class="infos_complemetaires">
 				<h3>- Informations complémentaires -</h3>
-				<p>Mobilité : Île de France <br> Mail: adrien.lach1@gmail.com <br> Téléphone : 06 59 65 69 46 <br> LinkedIn : 
+				<p>Mobilité : Île de France <br> Mail: adrien.lach1@gmail.com <br> Téléphone : 06 59 65 69 46 <br> LinkedIn :
 				<a href="https://www.linkedin.com/in/adrien-l-15b03b1a5/" id="lien_LinkedinProfile" target="_blanck">Voir mon profil</a></p>
 			</div>
 		</div>
 		<!-- <div id="infos_complemetaires">
 			<h3>Informations complémentaires</h3>
-			<p>Mobilité : Île de France <br> Mail: adrien.lach1@gmail.com <br> Téléphone : 06 59 65 69 46 <br> LinkedIn : 
+			<p>Mobilité : Île de France <br> Mail: adrien.lach1@gmail.com <br> Téléphone : 06 59 65 69 46 <br> LinkedIn :
 				<a href="https://www.linkedin.com/in/adrien-l-15b03b1a5/" id="lien_LinkedinProfile" target="_blanck">Voir mon profil</a></p>
-			
+
 		</div> -->
-		
+
 
 		<footer>
 			<p> &copy - Adrien LACHHAB -</p>
