@@ -53,45 +53,11 @@
 
 		<div id="competences">
 			<h2>Mes compétences</h2>
-			<input type="" id="dev_logiciel" name="dev_logiciel" placeholder="Développement logiciel"/>
+			<h3>- En informatique -</h3>
 			<canvas id="graph_competences" height="400" width="400"></canvas>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
-			<script>
-			// type="text/javascript" src="../vue/JS/script.js"
-			var getElemChart = document.getElementById('graph_competences').getContext('2d');
-			var myRadarChart = new Chart(getElemChart, 
-				{
-				type: 'radar',
-					data: 
-						{
-						labels: ['JAVA Standard Edition', 'C/C++, C#, VB.net, VBA, Python', 'Git/GitHub', 'MVC, Bridge, décorateur'],
-						labels: ['HTML5/CSS3', 'PHP7, JAVA EE', 'JavaScript', 'Frameworks JS/PHP et bootstrap'],
-						datasets: [{
-							data: [17, 13, 19, 12],
-							label:"Dévelopement logiciel",
-							backgroundColor: 'blue',
-							borderColor:'green',
-							opacity:'50%',
-						},
-						{
-							data: [20, 33, 56, 12],
-							label:"Dévelopement web",
-							backgroundColor: 'green',
-							borderColor:'red',
-							opacity:'50%',
-						}]	
-
-					},
-
-		
-			});
-
-			
-
-			
-			
-			</script>
-
+			<script type="text/javascript" src="../vue/JS/script.js">// type="text/javascript" src="../vue/JS/script.js"</script>
+			<h3>- Autres compétences généralistes -</h3>
 		</div>
 
 

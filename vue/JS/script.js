@@ -1,37 +1,49 @@
 
+//Chart JS
+// let techno_logicielles=['JAVA Standard Edition', 'C/C++, C#, VB.net, VBA, Python', 'Git/GitHub', 'MVC, Bridge, décorateur'],
+//     techno_web=['HTML5/CSS3', 'PHP7, JAVA EE', 'JavaScript', 'Frameworks JS/PHP et bootstrap'],
+//     techno_BDD=['SQL', 'PL/SQL', 'MCD/MLD', 'Extentions MERISE'],
+//     techno_systèmes_réseaux=['Systèmes d'/'exploitation','Administration systèmes et réseaux','Notions modèle OSI/TCP IP/UDP','Shell'],
+//Compétences 
+var getElemChart = document.getElementById('graph_competences').getContext('2d');
+    var myRadarChart = new Chart(getElemChart, 
+        {
+        type: 'radar',
+            data: 
+            {
+                labels: ['JAVA Standard Edition', 'C/C++, C#, VB.net, VBA, Python', 'Git/GitHub', 'MVC, Bridge, décorateur'],
+                labels: ['HTML5/CSS3', 'PHP7, JAVA EE', 'JavaScript', 'Frameworks JS/PHP et bootstrap'],
+                
+                datasets: [
+                {
+                    data: [20, 33, 56, 12],
+                    label:"Dévelopement web",
+                    backgroundColor: "rgba(0,28,255,0.5)",
+                    borderColor:'rgba(19,255,0,0.5)',
+                },
+                {
+                    data: [10, 43, 8, 5],
+                    label:"Dévelopement logiciel",
+                    backgroundColor: "rgba(19,255,0,0.5)",
+                    borderColor:'rgba(0,28,255,0.5)',
+                },
+                {
+                    data: [30, 3, 1, 28],
+                    label:"Base de données",
+                    backgroundColor: "rgba(255,0,0,0.5)",
+                    borderColor:'rgba(0,28,255,0.5)',
+                },
+                {
+                    data: [7, 33, 27, 4],
+                    label:"Systèmes et réseaux",
+                    backgroundColor: " rgba(11,14,15,0.5)",
+                    borderColor:'rgba(0,28,255,0.5)',
+                }]	
 
-var getElemChart = document.getElementById("graph_competences");
-console.log(getElemChart);
-
-var radar=new Chart(getElemChart,{
-    type:'radar',
-    data: {
-        labels: ['Running', 'Swimming', 'Eating', 'Cycling'],
-        datasets: [{data: [20, 10, 4, 2]  }]
-    },
-    
-    options = {
-        scale: {
-            angleLines: {
-                display: true
             },
-            suggestedMin: 50,
-            suggestedMax: 100
-        }
-    }
-})
-radar.display=true;
-// var myChart=new chartJS(getElemChart,{
-//     type:'line',
+    });
+    //Fin compétences 
 
-//     data:{
-//         labels:["HTML/CSS","JavaScript","FrameworksJS","PHP","Bootstrap","JavaJ2EE"],
-//         datasets:[{
-//             label:"My first dataset",
-//             backgroundColor: red,
-//             borderColor: blue,
-//             data: [1,5,3,4,8,7]
-//         }]
-//     },
-//     option:{}
-// });{}
+function vérif_graphes() {
+    
+}
