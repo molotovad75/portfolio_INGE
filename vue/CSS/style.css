@@ -36,19 +36,36 @@ header a:hover{
 
 .en_tete{
     text-align: center;
-    
+    background: linear-gradient(  #23d5ab,#23a6d5); /*#23a6d5, #24aa50,*/ 
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
-.en_tete h1{
+.en_tete h1.nom_prenom{
     font-size: 50px;
     color: #24aa50;
     text-shadow: 0px 5px 0px darkseagreen, 0 15px 1em black, 10px 15px 0.2em black;
+    z-index: 1;
 }
 
 #apropos,#parcours,#competences,#contact, footer p{ /*#infos_complemetaires*/
     width: 50%;
     margin-left: 25%;
 }
+
+/* Mes initiales dans le header (AL) */
+.lettre_A,.lettre_L{
+   font-size: 360px;
+}
+span.lettre_A,span.lettre_L{
+    margin-top: -90px;
+}
+.lettre{
+    margin-top: -250px;
+    z-index: 2;
+    opacity: 0.5;
+}
+
 .infos_complemetaires{
     width: 50%;
 }
