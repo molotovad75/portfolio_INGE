@@ -5,16 +5,17 @@
 		<meta charset="utf-8" />
 		<link rel="stylesheet" href="../vue/CSS/style.css">
 		<link rel="icon" type="image/x-icon" href="../vue/images/logo_eportfolio_sans_fond_blanc.bmp" />
-
+		
 	</head>
 
 	<body>
 		<header>
-			<a href="#en_tete"><img  href="../vue/images/logo_eportfolio_sans_fond_blanc.png" id="img" /></a>
+			<a href="#en_tete" class="AL">AL</a>
 			<a href="#apropos">Présentation</a>
 			<a href="#parcours">Parcours</a>
 			<a href="#competences">Compétences</a>
 			<a href="#contact">Contact</a>
+			
 		</header>
 
 
@@ -52,12 +53,15 @@
 		</div>
 
 		<div id="competences">
+			
 			<h2>Mes compétences</h2>
 			<h3>- En informatique -</h3>
 			<canvas id="graph_competences" height="400" width="400"></canvas>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
 			<script type="text/javascript" src="../vue/JS/script.js">// type="text/javascript" src="../vue/JS/script.js"</script>
 			<h3>- Autres compétences généralistes -</h3>
+			<canvas id="graph_autres_competences" height="100" width="100"></canvas>
+			<script type="text/javascript" src="../vue/JS/script.js"></script>
 		</div>
 
 
