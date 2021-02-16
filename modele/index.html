@@ -4,18 +4,20 @@
 		<title>Adrien LACHHAB </title>
 		<meta charset="utf-8" />
 		<link rel="stylesheet" href="../vue/CSS/style.css">
-		<link rel="icon" type="image/x-icon" href="../vue/images/logo_eportfolio_sans_fond_blanc.bmp" />
-		
+		<!-- <link rel="icon" type="image/x-icon" href="../vue/images/logo_eportfolio_sans_fond_blanc.bmp" /> -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 
 	<body>
-		<header>
+		<header id="nav">
 			<a href="#en_tete" class="AL">AL</a>
 			<a href="#apropos">Présentation</a>
 			<a href="#parcours">Parcours</a>
 			<a href="#competences">Compétences</a>
 			<a href="#contact">Contact</a>
-			
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
 		</header>
 
 
@@ -66,14 +68,20 @@
 
 
 		<div id="contact">
+			<h2>Me contacter</h2>
+			<div id="infos_complemetaires">
+				<h3>- Informations complémentaires -</h3>
+				<p>Mobilité : Île de France <br> Mail: adrien.lach1@gmail.com <br> Téléphone : 06 59 65 69 46 <br> LinkedIn :
+				<a href="https://www.linkedin.com/in/adrien-l-15b03b1a5/" id="lien_LinkedinProfile" target="_blanck">Voir mon profil</a></p>
+			</div>
+			
 			<div id="contact_me">
-				<h2>Me contacter</h2>
 				<h3>- Envoyer un message -</h3>
 				<form id="dialogbox" name="" method="POST" >
 					<p>Nom</p>
-					<input type="text" placeholder="Votre nom" name="nom" id="nom"/>
+					<input type="text" placeholder="First Name or pseudo" name="nom" id="nom"/>
 					<p>Adresse e-mail</p>
-					<input type="email" placeholder="Votre adresse mail" name="mail" id="mail"/>
+					<input type="email" placeholder="mail@mail.domaine" name="mail" id="mail"/>
 					<p>Message</p>
 					<textarea id="message" name="message" placeholder="Votre message"></textarea>
 					<br>
@@ -81,11 +89,7 @@
 				</form>
 			</div>
 
-			<div class="infos_complemetaires">
-				<h3>- Informations complémentaires -</h3>
-				<p>Mobilité : Île de France <br> Mail: adrien.lach1@gmail.com <br> Téléphone : 06 59 65 69 46 <br> LinkedIn :
-				<a href="https://www.linkedin.com/in/adrien-l-15b03b1a5/" id="lien_LinkedinProfile" target="_blanck">Voir mon profil</a></p>
-			</div>
+			
 		</div>
 		<!-- <div id="infos_complemetaires">
 			<h3>Informations complémentaires</h3>
