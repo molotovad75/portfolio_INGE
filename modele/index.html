@@ -77,15 +77,16 @@
 			
 			<div id="contact_me">
 				<h3>- Envoyer un message -</h3>
-				<form id="dialogbox" name="" method="POST" >
+				<form id="dialogbox" name="dialogbox" method="POST" action="../controle/formulaireHTML.php">
 					<p>Nom</p>
 					<input type="text" placeholder="First Name or pseudo" name="nom" id="nom"/>
 					<p>Adresse e-mail</p>
 					<input type="email" placeholder="mail@mail.domaine" name="mail" id="mail"/>
 					<p>Message</p>
-					<textarea id="message" name="message" placeholder="Votre message"></textarea>
+					<textarea id="message" name="_message" placeholder="Votre message"></textarea>
 					<br>
 					<input type="submit" placeholder="Envoyer" name="btn_envoyer" id="btn_envoyer" />
+					
 				</form>
 			</div>
 
