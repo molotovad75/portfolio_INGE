@@ -2,10 +2,10 @@
 <html>
 	<head>
 		<title>Adrien LACHHAB </title>
-		<meta charset="utf-8" />
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" href="../vue/CSS/style.css">
-		<!-- <link rel="icon" type="image/x-icon" href="../vue/images/logo_eportfolio_sans_fond_blanc.bmp" /> -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- <script type="text/javascript" src="../vue/JS/script_chart.js" ></script> -->
 	</head>
 
 	<body>
@@ -60,10 +60,10 @@
 			<h3>- En informatique -</h3>
 			<canvas id="graph_competences" height="400" width="400"></canvas>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
-			<script type="text/javascript" src="../vue/JS/script.js">// type="text/javascript" src="../vue/JS/script.js"</script>
+			<script type="text/javascript" src="../vue/JS/script_chart.js" onload="competences()"></script> <!--type="text/javascript" src="../vue/JS/script.js"--> 
 			<h3>- Autres compétences généralistes -</h3>
 			<canvas id="graph_autres_competences" height="100" width="100"></canvas>
-			<script type="text/javascript" src="../vue/JS/script.js"></script>
+			<script type="text/javascript" src="../vue/JS/script_chart.js" onload="langues()" ></script>
 		</div>
 
 
@@ -77,16 +77,19 @@
 			
 			<div id="contact_me">
 				<h3>- Envoyer un message -</h3>
-				<form id="dialogbox" name="dialogbox" method="POST" action="../controle/formulaireHTML.php">
+				<form id="dialogbox" name="dialogbox" method="POST" action="../controle/formulaireHTML.php" onsubmit="message_apres_formulaire()">
 					<p>Nom</p>
 					<input type="text" placeholder="First Name or pseudo" name="nom" id="nom"/>
 					<p>Adresse e-mail</p>
-					<input type="email" placeholder="mail@mail.domaine" name="mail" id="mail"/>
+					<input type="email" placeholder="mail@mail.domaine" name="mail" id="mail" />
 					<p>Message</p>
 					<textarea id="message" name="_message" placeholder="Votre message"></textarea>
 					<br>
+					<script type="text/javascript" src="../vue/JS/script.js" ></script>
 					<input type="submit" placeholder="Envoyer" name="btn_envoyer" id="btn_envoyer" />
 					
+					<!-- <p id="message_à_afficher"></p> -->
+					<div id="message_à_afficher"></div>
 				</form>
 			</div>
 
