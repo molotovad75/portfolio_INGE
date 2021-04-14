@@ -128,6 +128,30 @@ p#titre{
     height: 50%;
 }
 
+#inge,#ATS,#DUT,#bac{
+    line-height: 0%;
+}
+
+#pro_2020,#pro_2019{
+    line-height: normal;
+}
+
+#inge,#DUT{
+    text-align: right;
+    margin-right: 100px;
+    /* width: 90%; */
+}
+
+#DUT p,#DUT h4{
+     /* width: 70%; */
+     line-height: 0px;
+     /* word-spacing: 56px;*/
+}
+
+#ATS,#bac{
+    margin-left: 100px;
+}
+
 /* ,#infos_complemetaires */
 
 canvas #graph_autres_competences1, .chartjs-render-monitor{
