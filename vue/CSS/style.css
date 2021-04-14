@@ -108,15 +108,6 @@ header a.AL{
     text-align: center;
 }
 
-
-#schema_parcours_professionnel #pro_2020 p.titre,#schema_parcours_professionnel #pro_2019 p.titre, 
-#schema_parcours_superieur #inge p.titre,#schema_parcours_superieur #ATS p.titre,#schema_parcours_superieur #DUT p.titre,#schema_parcours_superieur #bac p.titre{
-    font-style: italic;
-    text-decoration: underline;
-   
-
-}
-
 #apropos,#parcours,#competences,#contact{
     background: linear-gradient(  #bdf2e5,#bde4f2);
     word-wrap: break-word;
@@ -127,6 +118,10 @@ header a.AL{
 }
 
 
+p#titre{
+    font-style: italic;
+    text-decoration: underline;
+}
 
 
 
