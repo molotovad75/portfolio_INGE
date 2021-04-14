@@ -5,7 +5,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" href="../vue/CSS/style.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<!-- <script type="text/javascript" src="../vue/JS/script_chart.js" ></script> -->
+		<script type="text/javascript" src="../vue/JS/script.js" ></script> 
 	</head>
 
 	<body>
@@ -50,19 +50,77 @@
 			<h2>Mon parcours</h2>
 
 			<h3>- Formations et diplômes -</h3>
+			<div id="schema_parcours_superieur">
+				<div id="inge">
+					<h4>2021-2024</h4>
+					<p class="titre">Cycle ingénieur informatique parcours Réseaux et sécurité </p>
+					<p>EFREI Paris - 94800 Villejuif</p>
+					<p></p>					
+				</div>
+
+				<div id="ATS">
+					<h4>2020-2021</h4>
+					<p class="titre">Prépa ATS Ingénierie industrielle</p>
+					<p>Lycée Bergson-Jacquard - 75019 Paris</p>
+					<p></p>					
+				</div>
+
+				<div id="DUT">
+					<h4>2020</h4>
+					<p class="titre">DUT Informatique<br></p>
+					<p>IUT de Paris Rives de seine (Anciennement Paris Descartes) - 75016 Paris</p>
+					<p>Option Data mining semestre 4</p>
+				</div>
+
+				<div id="bac">
+					<h4>2017</h4>
+					<p class="titre">BAC STI2D spécialité SIN<br></p>
+					<p>Lycée Diderot - 75019 Paris</p>
+					<!-- <p>(sciences et technologies de l'industrie et du dévelopement durable spécialité systèmes d'information et numérique)</p> -->
+				</div>
+			</div>
 
 			<h3>- Expériences professionnelles -</h3>
+			<div id="schema_parcours_professionnel">
+				<div id="pro_2020">
+					<h4>Mai-Juillet 2020</h4>
+					<p class="titre">Développeur et intégrateur web <br></p>
+					<p>OuiCrèches - 69100 Villeurbanne</p>
+					<p>
+						Création d'une plateforme web de mise en relation et de réservation 
+						entre parents et crèches. Créations de logos et de landings pages pour cette société.
+						Technologies utilisés : HTML5/CSS3, JavaScript/JQuery côté client.
+						Java J2EE côté serveur.
+						Site: https://www.bottinesetbottillons.fr
+					</p>
+				</div>
+				
+				<div id="pro_2019">
+					<h4>Juin-Juillet 2019</h4>
+					<p class="titre">Développeur AJAX et administration réseau <br></p>
+					<p>Demengo - 93500 Pantin </p>
+
+					<p>Gestion du réseau de l'entreprise. Création d'extensions du site 
+						et création d'une base de données pour optimiser le rangement 
+						des caisses et des meubles dans un dépôt.
+						Technologies utilisés : HTML5/CSS3, JavaScript/AJAX côté client
+						PHP côté serveur.
+						PowerShell, Terminal Ubuntu, cisco packet tracer : admin réseau
+						Site: https://www.demengo.fr/
+					</p>
+				</div>
+			</div>
 		</div>
 
 		<div id="competences">
 			
 			<h2>Mes compétences</h2>
 			<h3>- En informatique -</h3>
-			<canvas id="graph_competences" height="400" width="400"></canvas>
+			<canvas id="graph_autres_competences2"></canvas>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
 			<script type="text/javascript" src="../vue/JS/script_chart.js" onload="competences()"></script> <!--type="text/javascript" src="../vue/JS/script.js"--> 
-			<h3>- Autres compétences généralistes -</h3>
-			<canvas id="graph_autres_competences" height="100" width="100"></canvas>
+			<h3>- Compétences linguistiques -</h3>
+			<canvas id="graph_autres_competences1" ></canvas>
 			<script type="text/javascript" src="../vue/JS/script_chart.js" onload="langues()" ></script>
 		</div>
 
@@ -77,7 +135,7 @@
 			
 			<div id="contact_me">
 				<h3>- Envoyer un message -</h3>
-				<form id="dialogbox" name="dialogbox" method="POST" action="../controle/formulaireHTML.php" onsubmit="message_apres_formulaire()">
+				<form id="dialogbox" name="dialogbox" method="POST" action="../controle/formulaireHTML.php" >  <!--  -->
 					<p>Nom</p>
 					<input type="text" placeholder="First Name or pseudo" name="nom" id="nom"/>
 					<p>Adresse e-mail</p>
@@ -85,24 +143,14 @@
 					<p>Message</p>
 					<textarea id="message" name="_message" placeholder="Votre message"></textarea>
 					<br>
-					<script type="text/javascript" src="../vue/JS/script.js" ></script>
-					<input type="submit" placeholder="Envoyer" name="btn_envoyer" id="btn_envoyer" />
 					
-					<!-- <p id="message_à_afficher"></p> -->
-					<div id="message_à_afficher"></div>
+					<input type="submit" placeholder="Envoyer" name="btn_envoyer" id="btn_envoyer" onclick="message_apres_formulaire()" />
 				</form>
 			</div>
 
 			
 		</div>
-		<!-- <div id="infos_complemetaires">
-			<h3>Informations complémentaires</h3>
-			<p>Mobilité : Île de France <br> Mail: adrien.lach1@gmail.com <br> Téléphone : 06 59 65 69 46 <br> LinkedIn :
-				<a href="https://www.linkedin.com/in/adrien-l-15b03b1a5/" id="lien_LinkedinProfile" target="_blanck">Voir mon profil</a></p>
-
-		</div> -->
-
-
+		
 		<footer>
 			<p> &copy - Adrien LACHHAB -</p>
 		</footer>

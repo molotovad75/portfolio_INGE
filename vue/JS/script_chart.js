@@ -13,7 +13,7 @@
 // }
 
 function competences(){
-    var getElemChart = document.getElementById('graph_competences').getContext('2d');
+    var getElemChart = document.getElementById('graph_autres_competences2').getContext('2d');
     var myRadarChart = new Chart(getElemChart, 
         {
         type: 'radar',
@@ -58,29 +58,52 @@ function competences(){
 
 
 function langues(){
-    var getElemChartAutres_compétences = document.getElementById('graph_autres_competences').getContext('2d');
+    var getElemChartAutres_compétences = document.getElementById('graph_autres_competences1').getContext('2d');
     var myRadar2chart= new Chart(getElemChartAutres_compétences,
     {
         type:'bar',
         data:
         {
-            labels: ['Anglais', 'Espagnol', 'Portugais'],
+            labels: ['Maitrise des langues'],
             datasets:[{
-                label:'Niveau de connaissance en %',
+                label:['Niveau de connaissance pour anglais'],
 
-                data: [12, 19, 3],
+                data: [12],
+
                 backgroundColor: [
-                    'rgba(255, 99, 132, 0.2)',
-                    'rgba(54, 162, 235, 0.2)',
-                    'rgba(255, 206, 86, 0.2)'
+                    'rgba(255, 99, 132, 0.5)',//couleur rouge
                 ],
-                borderColor: [
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)'
+                borderWidth: 1,
+                labels: ['Anglais']
+            },
+            {
+                label:['Niveau de connaissance pour esapgnol'],
+                data: [19],
+                backgroundColor: [
+                    'rgba(54, 162, 235, 0.5)',//couleur bleue
                 ],
-                borderWidth: 1
-            }]
+                borderWidth: 1,
+                labels: ['Espagnol']
+            },
+            {
+                label:['Niveau de connaissance pour portugais'],
+                data: [3],
+                backgroundColor: [
+                    'rgba(255, 206, 86, 0.5)'//couleur orangée
+                ],
+                borderWidth: 1,
+                labels: ['Portugais']
+            },
+            {
+                label:['Niveau de connaissance en français'],
+                data: [100],
+                backgroundColor: [
+                    'rgba(241, 0, 255, 0.5)'//couleur rosée
+                ],
+                borderWidth: 1,
+                labels: ['Français']
+            }
+            ]
         },
     }
 );
