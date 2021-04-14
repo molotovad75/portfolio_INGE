@@ -123,7 +123,10 @@ p#titre{
     text-decoration: underline;
 }
 
-
+#schema_parcours_professionnel{
+    width: 50%;
+    height: 50%;
+}
 
 /* ,#infos_complemetaires */
 
