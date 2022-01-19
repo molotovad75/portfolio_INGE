@@ -6,15 +6,20 @@
 		<link rel="stylesheet" href="../vue/CSS/style.css">
 		<!-- <link rel="icon" type="image/x-icon" href="../vue/images/logo_eportfolio_sans_fond_blanc.bmp" /> -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- <script src="../vue/JS/script.js" type="text/javascript"> </script> -->
 	</head>
 
 	<body>
 		<header id="nav">
-			<a href="#en_tete" class="AL">AL</a>
-			<a href="#apropos">Présentation</a>
-			<a href="#parcours">Parcours</a>
-			<a href="#competences">Compétences</a>
-			<a href="#contact">Contact</a>
+			<a href="index.html" class="AL" onclick="">AL</a>
+			<a href="#resume_downloading" onclick="affiche_presentation()">Présentation</a> 
+			<!-- apropos1 -->
+			<a href="#presentation" onclick="affiche_parcours()">Parcours</a>
+			<!-- parcours -->
+			<a href="#expro" onclick="affiche_competences()">Compétences</a>
+			<!-- compétences -->
+			<a href="#space" onclick="affiche_contact()">Contact</a>
+			<!-- contact -->
 			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 				<i class="fa fa-bars"></i>
 			</a>
@@ -22,70 +27,79 @@
 
 
 		<div class="en_tete">
-			
+			<script type="text/javascript" src="../vue/JS/script.js">// type="text/javascript" src="../vue/JS/script.js"</script>
 			<h1 class="nom_prenom">ADRIEN LACHHAB</h1>
-			<p>Passioné d'informatique depuis toujours...</p>
-			<input type="button" id="to_presentation" name="to_presentation" value="Plus sur moi !"/>
+			<p> <span id="age"></span> ans et passioné d'informatique ! </p>
+			<div class="apropos">
+				<input type="button" name="resume_downloading" id="resume_downloading" value="CV en pdf" onclick="afficher_CV()" />
+			</div>
 			<h1 class="lettre"><span class="lettre_A">A</span><span class="lettre_L">L</span></h1>
 		</div>
 
-		<div id="apropos" >
-			<h2>Je suis ...</h2>
+		<!-- <div id="space1"><p>d</p></div> -->
+
+		<div id="apropos1" >
+			<h2>Qui suis-je ?</h2>
 			<div id="presentation">
-				<h3>- Un étudiant en informatique -</h3>
-				<p>Je m'appelle LACHHAB Adrien et je suis passioné par toute chose qui touche à l'infomatique depuis mon plus jeune age.<br></p>
-				<p>Titulaire d'un DUT informatique edepuis début Juillet 2020, je me suis orienté vers une prépa ATS (Adaptation technicien supérieur),
-					je m'apprêtre à partir de septembre 2021 effectuer un cursus d'ingénieur par contrat d'apprentissage autour de la cybersécurité.<br> </p>
-
-				<p>De ce fait, il me faut signer un contrat d'apprentissage d'une durée de 3 ans.</p>
-
+				<p>Je m'appelle Adrien et j'éprouve un intérêt pour l'infomatique et le digital depuis quelques années.<br></p>
+				<p>Etudiant en informatique,
+					je suis à ce jour un cursus d'ingéniérie en réseaux et sécurité informatique par alternance.<br> 
+				</p>
 			</div>
-			<div class="apropos">
-				<input type="button" name="resume_downloading" id="resume_downloading" value="Mon CV"/>
-			</div>
+			<!-- <div class="apropos">
+				<input type="button" name="resume_downloading" id="resume_downloading" value="CV en pdf" onclick="afficher_CV()" />
+			</div> -->
 
 		</div>
+
+		<!-- <div id="space2"><p>d</p></div> -->
 
 		<div id="parcours">
 			<h2>Mon parcours</h2>
 
 			<h3>- Formations et diplômes -</h3>
-
+			<span id="formation"></span>
 			<h3>- Expériences professionnelles -</h3>
+			<span id="expro"></span>
 		</div>
+
+		<!-- <div id="space3"><p>d</p></div> -->
+
 
 		<div id="competences">
 			
 			<h2>Mes compétences</h2>
-			<h3>- En informatique -</h3>
+			<h3>- Informatique -</h3>
 			<canvas id="graph_competences" height="400" width="400"></canvas>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
 			<script type="text/javascript" src="../vue/JS/script.js">// type="text/javascript" src="../vue/JS/script.js"</script>
-			<h3>- Autres compétences généralistes -</h3>
-			<canvas id="graph_autres_competences" height="100" width="100"></canvas>
+			<h3>- Langues -</h3>
+			<canvas id="graph_autres_competences" height="70" width="100"></canvas>
 			<script type="text/javascript" src="../vue/JS/script.js"></script>
 		</div>
 
+		<div id="space"><p></p></div>
 
-		<div id="contact">
+
+		<div id="contact" >
 			<h2>Me contacter</h2>
 			<div id="infos_complemetaires">
 				<h3>- Informations complémentaires -</h3>
 				<p>Mobilité : Île de France <br> Mail: adrien.lach1@gmail.com <br> Téléphone : 06 59 65 69 46 <br> LinkedIn :
-				<a href="https://www.linkedin.com/in/adrien-l-15b03b1a5/" id="lien_LinkedinProfile" target="_blanck">Voir mon profil</a></p>
+				<a href="https://www.linkedin.com/in/adrien-lachhab-15b03b1a5/" id="lien_LinkedinProfile" target="_blanck" >Voir mon profil</a></p>
 			</div>
 			
 			<div id="contact_me">
 				<h3>- Envoyer un message -</h3>
-				<form id="dialogbox" name="dialogbox" method="POST" action="../controle/formulaireHTML.php">
+				<form id="dialogbox" name="dialogbox" method="POST" action="../controle/formulaireHTML.php" >
 					<p>Nom</p>
-					<input type="text" placeholder="First Name or pseudo" name="nom" id="nom"/>
+					<input type="text" placeholder="First Name or pseudo" name="nom" id="nom" disabled="disabled"/>
 					<p>Adresse e-mail</p>
-					<input type="email" placeholder="mail@mail.domaine" name="mail" id="mail"/>
+					<input type="email" placeholder="mail@mail.domaine" name="mail" id="mail" disabled="disabled"/>
 					<p>Message</p>
-					<textarea id="message" name="message" placeholder="Votre message"></textarea>
+					<textarea id="message" name="message" placeholder="Votre message" disabled="disabled"></textarea>
 					<br>
-					<input type="submit" placeholder="Envoyer" name="btn_envoyer" id="btn_envoyer" />
+					<input type="submit" placeholder="Envoyer" name="btn_envoyer" id="btn_envoyer" disabled="disabled"/>
 				</form>
 			</div>
 
@@ -99,7 +113,7 @@
 		</div> -->
 
 
-		<footer>
+		<footer id="footer">
 			<p> &copy - Adrien LACHHAB -</p>
 		</footer>
 	</body>

@@ -85,4 +85,148 @@ function myFunction() {
     } else {
       x.className = "nav";
     }
-  }
+}
+
+function age(){
+    let age_=0;
+    var now=new Date();
+
+    let annee=now.getFullYear()-1999;
+
+    if(now.getMonth()<7 || (now.getDay()<2 && now.getMonth()==7) ){
+        age_=annee-1;
+    }else if(now.getMonth()>=7 || (now.getDay()>=2 && now.getMonth()==7)){
+        age_=annee;
+    }
+    return age_;
+}
+
+document.getElementById("age").innerText=age();
+
+function exp_pro(){
+
+
+
+}
+
+function parcours(){
+
+}
+
+function afficher_CV(){
+    window.open('../vue/CV_Ingé_LACHHAB_Adrien.pdf','blank');
+}
+
+function affiche_presentation(){
+    //présentation
+    document.querySelector("#apropos1").style.pointerEvents="visible";
+    document.querySelector("#apropos1").style.filter="blur(0px)";
+
+    //Parcours
+    document.querySelector("#parcours").style.pointerEvents="none";
+    document.querySelector("#parcours").style.filter="blur(10px)";
+
+    //Compétences
+    document.querySelector("#competences").style.pointerEvents="none";
+    document.querySelector("#competences").style.filter="blur(10px)";
+
+    //contact
+    document.querySelector("#contact").style.pointerEvents="none";
+    document.querySelector("#contact").style.filter="blur(10px)";
+
+    //Il faut center et mettre au centre la partie présentation
+    /* haut | droit | bas | gauche */
+    document.querySelector(".en_tete").style.margin="0 0 50px 0"; //Ce qui est en haut
+    document.querySelector("#parcours").style.margin="50px 0 0 25%"; //Ce qui est en bas
+    
+    document.querySelector("#apropos1").style.margin="0 0 0 25%"; 
+    document.querySelector("#competences").style.margin="0 0 0 25%";
+    document.querySelector("#contact").style.margin="0 0 0 25%";
+    document.querySelector("#footer").style.margin="0 0 0 0"; 
+}
+
+function affiche_parcours(){
+    //présentation
+    document.querySelector("#apropos1").style.pointerEvents="none";
+    document.querySelector("#apropos1").style.filter="blur(10px)";
+
+    //Parcours
+    document.querySelector("#parcours").style.pointerEvents="visible";
+    document.querySelector("#parcours").style.filter="blur(0px)";
+
+    //Compétences
+    document.querySelector("#competences").style.pointerEvents="none";
+    document.querySelector("#competences").style.filter="blur(10px)";
+
+    //contact
+    document.querySelector("#contact").style.pointerEvents="none";
+    document.querySelector("#contact").style.filter="blur(10px)";
+
+    //Il faut center et mettre au centre la partie parcours
+
+    /* haut | droit | bas | gauche */
+    document.querySelector("#apropos1").style.margin="0 0 50px 25%"; //Ce qui est en haut
+    document.querySelector("#competences").style.margin="50px 0 0 25%"; //Ce qui est en bas
+
+    document.querySelector("#parcours").style.margin="0 0 0 25%"; 
+    document.querySelector("#contact").style.margin="0 0 0 25%";
+    document.querySelector(".en_tete").style.margin="0 0 0 0"; 
+    document.querySelector("#footer").style.margin="0 0 0 0"; 
+}
+
+function affiche_competences(){
+    //présentation
+    document.querySelector("#apropos1").style.pointerEvents="none";
+    document.querySelector("#apropos1").style.filter="blur(10px)";
+
+    //Parcours
+    document.querySelector("#parcours").style.pointerEvents="none";
+    document.querySelector("#parcours").style.filter="blur(10px)";
+
+    //Compétences
+    document.querySelector("#competences").style.pointerEvents="visible";
+    document.querySelector("#competences").style.filter="blur(0px)";
+
+    //contact
+    document.querySelector("#contact").style.pointerEvents="none";
+    document.querySelector("#contact").style.filter="blur(10px)";
+
+    //Il faut center et mettre au centre la partie compétences
+     /* haut | droit | bas | gauche */
+    document.querySelector("#parcours").style.margin="0 0 50px 25%"; //Ce qui est en haut
+    document.querySelector("#contact").style.margin="50px 0 0 25%"; //Ce qui est en bas
+    
+    document.querySelector(".en_tete").style.margin="0 0 0 0"; 
+    document.querySelector("#apropos1").style.margin="0 0 0 25%";
+    document.querySelector("#competences").style.margin="0 0 0 25%"; 
+    document.querySelector("#footer").style.margin="0 0 0 0"; 
+}
+
+function affiche_contact(){
+    //présentation
+    document.querySelector("#apropos1").style.pointerEvents="none";
+    document.querySelector("#apropos1").style.filter="blur(10px)";
+
+    //Parcours
+    document.querySelector("#parcours").style.pointerEvents="none";
+    document.querySelector("#parcours").style.filter="blur(10px)";
+
+    //Compétences
+    document.querySelector("#competences").style.pointerEvents="none";
+    document.querySelector("#competences").style.filter="blur(10px)";
+
+    //contact
+    document.querySelector("#contact").style.pointerEvents="visible";
+    document.querySelector("#contact").style.filter="blur(0px)";
+
+    //Il faut center et mettre au centre la partie contact
+     /* haut | droit | bas | gauche */
+    document.querySelector("#competences").style.margin="0 0 50px 25%"; //Ce qui est en haut
+    document.querySelector("#footer").style.margin="50px 0 0 0"; //Ce qui est en bas
+
+    document.querySelector("#parcours").style.margin="0 0 0 25%"; 
+    document.querySelector("#contact").style.margin="0 0 0 25%"; 
+    document.querySelector(".en_tete").style.margin="0 0 0 0"; 
+    document.querySelector("#apropos1").style.margin="0 0 0 25%";
+
+}
