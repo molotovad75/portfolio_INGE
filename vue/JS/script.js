@@ -1,4 +1,3 @@
-
 //Chart JS
 // let techno_logicielles=['JAVA Standard Edition', 'C/C++, C#, VB.net, VBA, Python', 'Git/GitHub', 'MVC, Bridge, décorateur'],
 //     techno_web=['HTML5/CSS3', 'PHP7, JAVA EE', 'JavaScript', 'Frameworks JS/PHP et bootstrap'],
@@ -87,6 +86,11 @@ function myFunction() {
     }
 }
 
+
+
+
+//IL FAUT FINIR LA FONCTION QUI CODE Le menu 
+
 function age(){
     let age_=0;
     var now=new Date();
@@ -100,6 +104,8 @@ function age(){
     }
     return age_;
 }
+
+
 
 document.getElementById("age").innerText=age();
 
@@ -118,6 +124,8 @@ function afficher_CV(){
 }
 
 function affiche_presentation(){
+    
+    //document.querySelector("#apropos1").style.display="flow";
     //présentation
     document.querySelector("#apropos1").style.pointerEvents="visible";
     document.querySelector("#apropos1").style.filter="blur(0px)";
@@ -134,27 +142,44 @@ function affiche_presentation(){
     document.querySelector("#contact").style.pointerEvents="none";
     document.querySelector("#contact").style.filter="blur(10px)";
 
-    //Il faut center et mettre au centre la partie présentation
+    //Il faut center et mettre au centre la partie présentation 
     /* haut | droit | bas | gauche */
-    document.querySelector(".en_tete").style.margin="0 0 50px 0"; //Ce qui est en haut
-    document.querySelector("#parcours").style.margin="50px 0 0 25%"; //Ce qui est en bas
+    document.querySelector(".en_tete").style.margin="0 0 50px 0"; //Ce qui est en haut de la partie concernée
+    document.querySelector("#parcours").style.margin="50px 0 0 25%"; //Ce qui est en bas de la partie concernée
     
-    document.querySelector("#apropos1").style.margin="0 0 0 25%"; 
+    document.querySelector("#apropos1").style.margin="0 0 0 10%"; 
     document.querySelector("#competences").style.margin="0 0 0 25%";
     document.querySelector("#contact").style.margin="0 0 0 25%";
-    document.querySelector("#footer").style.margin="0 0 0 0"; 
-
-     //Changer la taille de notre fenêtre pour qu'elle couvre une bonne partie de l'application.
-     document.querySelector("#apropos1").style.height="400px";
-     document.querySelector("#apropos1").style.padding="0 0 0 0"; 
-     document.querySelector("#apropos1").style.textAlign="center";
-     document.querySelector("#apropos1").style.width="82%";
-     document.querySelector("#apropos1 h2").style.padding="100px 0 0 0";
+    document.querySelector("#footer").style.margin="0 0 0 0";
 
 
+    //Changer la taille de notre fenêtre pour qu'elle couvre une bonne partie de l'application.
+    document.querySelector("#apropos1").style.height="400px";
+    document.querySelector("#apropos1").style.padding="0 0 0 0"; 
+    document.querySelector("#apropos1").style.textAlign="center";
+    document.querySelector("#apropos1").style.width="82%";
+    document.querySelector("#apropos1 h2").style.padding="100px 0 0 0";
+
+   //Rendre responsive les autres divisions (div).
+   let size_screen=window.matchMedia("max-width: 704px");
+   
+//    if(size_screen.matches){
+//         document.querySelector("#parcours").style.margin="50px 0 0 10%";
+//         document.querySelector("#competences").style.margin="50px 0 0 10%";
+//         document.querySelector("#contact").style.margin="50px 0 0 10%";
+//    }
+
+
+    // while(document.querySelector("html").style.widows.width>size_screen){
+    //     document.querySelector("#parcours").style.margin="50px 0 0 25%";
+    //     document.querySelector("#competences").style.margin="0 0 0 25%";
+    //     document.querySelector("#contact").style.margin="0 0 0 25%";
+
+    // }
 }
 
 function affiche_parcours(){
+    //document.querySelector("#parcours").style.display="flow";
     //présentation
     document.querySelector("#apropos1").style.pointerEvents="none";
     document.querySelector("#apropos1").style.filter="blur(10px)";
@@ -174,8 +199,8 @@ function affiche_parcours(){
     //Il faut center et mettre au centre la partie parcours
 
     /* haut | droit | bas | gauche */
-    document.querySelector("#apropos1").style.margin="0 0 50px 25%"; //Ce qui est en haut
-    document.querySelector("#competences").style.margin="50px 0 0 25%"; //Ce qui est en bas
+    document.querySelector("#apropos1").style.margin="0 0 50px 25%"; //Ce qui est en haut de la partie concernée
+    document.querySelector("#competences").style.margin="50px 0 0 25%"; //Ce qui est en bas de la partie concernée
 
     document.querySelector("#parcours").style.margin="0 0 0 25%"; 
     document.querySelector("#contact").style.margin="0 0 0 25%";
@@ -187,9 +212,19 @@ function affiche_parcours(){
     document.querySelector("#apropos1").style.padding="0 0 1% 0"; 
     document.querySelector("#apropos1").style.width="62%";
     document.querySelector("#apropos1 h2").style.padding="0 0 0 0";
+
+    //Rendre responsive les autres divisions (div).
+//    var size_screen=window.matchMedia("(max-width:672.4px)");
+//    if(size_screen.matches){
+//         document.getElementById("parcours").style.margin="50px 0 0 10%";
+//         document.getElementById("competences").style.margin="50px 0 0 10%";
+//         document.getElementById("contact").style.margin="50px 0 0 10%";
+//    }
+    
 }
 
 function affiche_competences(){
+    //document.querySelector("#competences").style.display="flow";
     //présentation
     document.querySelector("#apropos1").style.pointerEvents="none";
     document.querySelector("#apropos1").style.filter="blur(10px)";
@@ -208,22 +243,26 @@ function affiche_competences(){
 
     //Il faut center et mettre au centre la partie compétences
      /* haut | droit | bas | gauche */
-    document.querySelector("#parcours").style.margin="0 0 50px 25%"; //Ce qui est en haut
-    document.querySelector("#contact").style.margin="50px 0 0 25%"; //Ce qui est en bas
+    document.querySelector("#parcours").style.margin="0 0 50px 25%"; //Ce qui est en haut de la partie concernée
+    document.querySelector("#contact").style.margin="50px 0 0 25%"; //Ce qui est en bas de la partie concernée
     
     document.querySelector(".en_tete").style.margin="0 0 0 0"; 
     document.querySelector("#apropos1").style.margin="0 0 0 25%";
     document.querySelector("#competences").style.margin="0 0 0 25%"; 
     document.querySelector("#footer").style.margin="0 0 0 0"; 
 
-      //Changer la taille de notre fenêtre pour qu'elle couvre une bonne partie de l'application.
-      document.querySelector("#apropos1").style.height="auto";
-      document.querySelector("#apropos1").style.padding="0 0 1% 0"; 
-      document.querySelector("#apropos1").style.width="62%";
-      document.querySelector("#apropos1 h2").style.padding="0 0 0 0";
+    //Changer la taille de notre fenêtre pour qu'elle couvre une bonne partie de l'application.
+    document.querySelector("#apropos1").style.height="auto";
+    document.querySelector("#apropos1").style.padding="0 0 1% 0"; 
+    document.querySelector("#apropos1").style.width="62%";
+    document.querySelector("#apropos1 h2").style.padding="0 0 0 0";
+
+    //document.querySelector("canvas").style.display="none";
+    
 }
 
 function affiche_contact(){
+    //document.querySelector("#contact").style.display="flow";
     //présentation
     document.querySelector("#apropos1").style.pointerEvents="none";
     document.querySelector("#apropos1").style.filter="blur(10px)";
@@ -242,8 +281,8 @@ function affiche_contact(){
 
     //Il faut center et mettre au centre la partie contact
      /* haut | droit | bas | gauche */
-    document.querySelector("#competences").style.margin="0 0 50px 25%"; //Ce qui est en haut
-    document.querySelector("#footer").style.margin="50px 0 0 0"; //Ce qui est en bas
+    document.querySelector("#competences").style.margin="0 0 50px 25%"; //Ce qui est en haut de la partie concernée
+    document.querySelector("#footer").style.margin="50px 0 0 0"; //Ce qui est en bas de la partie concernée
 
     document.querySelector("#parcours").style.margin="0 0 0 25%"; 
     document.querySelector("#contact").style.margin="0 0 0 25%"; 
@@ -256,6 +295,7 @@ function affiche_contact(){
     document.querySelector("#apropos1").style.width="62%";
     document.querySelector("#apropos1 h2").style.padding="0 0 0 0";
 
+   
 }
 
 function back_accueil(){
