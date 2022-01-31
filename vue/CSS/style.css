@@ -23,7 +23,7 @@ header{
     background-color: #24aa50;
     padding-top: 1%;
     padding-bottom: 1%;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 3;
 }
@@ -278,7 +278,7 @@ footer p{
     }
 
     header{
-        position: sticky;
+        position: fixed;
     }
 
     #apropos1,#parcours,#competences,#contact{
