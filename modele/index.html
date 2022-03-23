@@ -4,8 +4,9 @@
 		<title>Adrien LACHHAB </title>
 		<meta charset="utf-8" />
 		<link rel="stylesheet" href="../vue/CSS/style.css">
-		<!-- <link rel="icon" type="image/x-icon" href="../vue/images/logo_eportfolio_sans_fond_blanc.bmp" /> -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<script src="https://kit.fontawesome.com/39fb408f93.js" crossorigin="anonymous"></script>
+		
 		<script src="../vue/JS/script.js" type="text/javascript"> </script>
 	</head>
 
@@ -23,9 +24,9 @@
 			<a href="javascript:void(0);" id="barres" class="icon" onclick="myFunction()" ><i class="fa fa-bars"></i></a>
 		</header>
 
-
+		<!-- recup_champ_form(); -->
 		<div class="en_tete">
-			<h1 class="nom_prenom">ADRIEN LACHHAB</h1>
+			<h1 class="nom_prenom">Adrien LACHHAB</h1>
 			<p> <span id="age"></span> ans et passioné d'informatique ! </p>
 			<div class="apropos">
 				<input type="button" name="resume_downloading" id="resume_downloading" value="CV en pdf" onclick="afficher_CV()" />
@@ -36,8 +37,8 @@
 		<div id="apropos1" >
 			<h2>Qui suis-je ?</h2>
 			<div id="presentation">
-				<p>Sans surpise, je me nomme Adrien et comme vous le savez pour la plupart, j'éprouve un intérêt pour l'infomatique et le digital depuis quelques années.<br></p>
-				<p>À travers cette réalisation je vous montre ma passion et mes compétences pour le développement web. </p>
+				<p>Sans surpise, je me nomme Adrien et comme vous le savez pour la plupart, j'éprouve un intérêt pour l'infomatique et les technologies digitales depuis quelques années.<br></p>
+				<p>À travers cette réalisation je vous montre ma passion et mes compétences techniques pour le développement web. </p>
 				<p>Etudiant en informatique,
 					je suis à ce jour un cursus d'ingéniérie en réseaux et sécurité informatique par alternance.<br> 
 				</p>
@@ -74,7 +75,7 @@
 			<h2>Me contacter</h2>
 			<div id="infos_complemetaires">
 				<h3>- Informations complémentaires -</h3>
-				<p>Mobilité : Île de France <br> Mail: adrien.lach1@gmail.com <br> Téléphone : 06 59 65 69 46 <br> LinkedIn :
+				<p><i class="fa-solid fa-house"></i> Île de France/Paris Area <br><i class="fa-solid fa-envelope"></i> adrien.lach1@gmail.com <br> <i class="fa-solid fa-mobile-button"></i> --- <br> <i class="fa-brands fa-linkedin"></i>
 				<a href="https://www.linkedin.com/in/adrien-lachhab-15b03b1a5/" id="lien_LinkedinProfile" target="_blanck" >Voir mon profil</a></p>
 			</div>
 			
@@ -82,13 +83,13 @@
 				<h3>- Envoyer un message -</h3>
 				<form id="dialogbox" name="dialogbox" method="POST" action="../controle/formulaireHTML.php" >
 					<p>Nom</p>
-					<input type="text" placeholder="First Name or pseudo" name="nom" id="nom" disabled="disabled"/>
+					<input type="text" placeholder="First Name or pseudo" name="nom" id="nom" />
 					<p>Adresse e-mail</p>
-					<input type="email" placeholder="mail@mail.domaine" name="mail" id="mail" disabled="disabled"/>
+					<input type="email" placeholder="mail@mail.domaine" name="mail" id="mail"/>
 					<p>Message</p>
-					<textarea id="message" name="message" placeholder="Votre message" disabled="disabled"></textarea>
+					<textarea id="message" name="message" placeholder="Votre message" ></textarea>
 					<br>
-					<input type="submit" placeholder="Envoyer" name="btn_envoyer" id="btn_envoyer" disabled="disabled"/>
+					<input type="submit" placeholder="Envoyer" name="btn_envoyer" id="btn_envoyer" />
 				</form>
 			</div>
 
@@ -102,8 +103,9 @@
 
 
 		<footer id="footer">
-			<p> &copy E-portfolio intéractif réalisés avec les technologies suivantes </p>
-			<i class="fa fa-html"></i>
+			<p class="text"> Technologies utilisées </p>
+			<p class="icone"><i class="fa fa-html5"></i> <i class="fa fa-css3"></i>  <i class="fa fa-github"></i> <i class="fa-brands fa-js"></i> <i class="fa-brands fa-php"></i> <i class="fa-solid fa-database"></i> </p>
+			
 		</footer>
 	</body>
 

@@ -160,22 +160,28 @@ function affiche_presentation(){
     document.querySelector("#apropos1").style.width="82%";
     document.querySelector("#apropos1 h2").style.padding="100px 0 0 0";
 
-   //Rendre responsive les autres divisions (div).
-   let size_screen=window.matchMedia("max-width: 704px");
-   
-//    if(size_screen.matches){
-//         document.querySelector("#parcours").style.margin="50px 0 0 10%";
-//         document.querySelector("#competences").style.margin="50px 0 0 10%";
-//         document.querySelector("#contact").style.margin="50px 0 0 10%";
-//    }
+    //Position des autres parties
 
+    document.querySelector("#parcours").style.height="auto";
+    document.querySelector("#parcours").style.padding="0 0 1% 0"; 
+    document.querySelector("#parcours").style.width="62%";
+    document.querySelector("#parcours h2").style.padding="0 0 0 0";
 
-    // while(document.querySelector("html").style.widows.width>size_screen){
-    //     document.querySelector("#parcours").style.margin="50px 0 0 25%";
-    //     document.querySelector("#competences").style.margin="0 0 0 25%";
-    //     document.querySelector("#contact").style.margin="0 0 0 25%";
+    document.querySelector("#competences").style.height="auto";
+    document.querySelector("#competences").style.padding="0 0 1% 0"; 
+    document.querySelector("#competences").style.width="62%";
+    document.querySelector("#competences h2").style.padding="0 0 0 0";
 
-    // }
+    //Ancienne résolution CSS
+
+    document.querySelector("#contact").style.height="auto";
+    document.querySelector("#contact").style.padding="0 0 1% 0"; 
+    document.querySelector("#contact").style.width="62%";
+    document.querySelector("#contact h2").style.padding="0 0 0 0";
+    //document.querySelector("#contact_me").style.margin="0px 0px 0px 0px";  
+    document.querySelector("#infos_complemetaires").style.margin="0 0 0 0";
+
+    
 }
 
 function affiche_parcours(){
@@ -205,7 +211,16 @@ function affiche_parcours(){
     document.querySelector("#parcours").style.margin="0 0 0 25%"; 
     document.querySelector("#contact").style.margin="0 0 0 25%";
     document.querySelector(".en_tete").style.margin="0 0 0 0"; 
-    document.querySelector("#footer").style.margin="0 0 0 0"; 
+    document.querySelector("#footer").style.margin="0 0 0 0";    
+
+
+    document.querySelector("#parcours").style.height="400px";
+    document.querySelector("#parcours").style.margin="-20px 0px 0px 10%"; 
+    document.querySelector("#parcours").style.textAlign="center";
+    document.querySelector("#parcours").style.width="82%";
+    document.querySelector("#parcours h2").style.padding="100px 0 0 0";
+
+    //Position des autres parties
 
     //Changer la taille de notre fenêtre pour qu'elle couvre une bonne partie de l'application.
     document.querySelector("#apropos1").style.height="auto";
@@ -213,14 +228,19 @@ function affiche_parcours(){
     document.querySelector("#apropos1").style.width="62%";
     document.querySelector("#apropos1 h2").style.padding="0 0 0 0";
 
-    //Rendre responsive les autres divisions (div).
-//    var size_screen=window.matchMedia("(max-width:672.4px)");
-//    if(size_screen.matches){
-//         document.getElementById("parcours").style.margin="50px 0 0 10%";
-//         document.getElementById("competences").style.margin="50px 0 0 10%";
-//         document.getElementById("contact").style.margin="50px 0 0 10%";
-//    }
-    
+    document.querySelector("#competences").style.height="auto";
+    document.querySelector("#competences").style.padding="0 0 1% 0"; 
+    document.querySelector("#competences").style.width="62%";
+    document.querySelector("#competences h2").style.padding="0 0 0 0";
+    //Ancienne résolution CSS
+    document.querySelector("#contact").style.height="auto";
+    document.querySelector("#contact").style.padding="0 0 1% 0"; 
+    document.querySelector("#contact").style.width="62%";
+    document.querySelector("#contact h2").style.padding="0 0 0 0";
+    //document.querySelector("#contact_me").style.margin="0px 0px 0px 0px";  
+    document.querySelector("#infos_complemetaires").style.margin="0 0 0 0";
+
+
 }
 
 function affiche_competences(){
@@ -251,14 +271,28 @@ function affiche_competences(){
     document.querySelector("#competences").style.margin="0 0 0 25%"; 
     document.querySelector("#footer").style.margin="0 0 0 0"; 
 
+    //Position des autres parties
+
     //Changer la taille de notre fenêtre pour qu'elle couvre une bonne partie de l'application.
     document.querySelector("#apropos1").style.height="auto";
     document.querySelector("#apropos1").style.padding="0 0 1% 0"; 
     document.querySelector("#apropos1").style.width="62%";
     document.querySelector("#apropos1 h2").style.padding="0 0 0 0";
 
-    //document.querySelector("canvas").style.display="none";
-    
+    document.querySelector("#parcours").style.height="auto";
+    document.querySelector("#parcours").style.padding="0 0 1% 0"; 
+    document.querySelector("#parcours").style.width="62%";
+    document.querySelector("#parcours h2").style.padding="0 0 0 0";
+
+    //Ancienne résolution CSS
+    document.querySelector("#contact").style.height="auto";
+    document.querySelector("#contact").style.padding="0 0 1% 0"; 
+    document.querySelector("#contact").style.width="62%";
+    document.querySelector("#contact h2").style.padding="0 0 0 0";
+    //document.querySelector("#contact_me").style.margin="0px 0px 0px 0px";  
+    document.querySelector("#infos_complemetaires").style.margin="0 0 0 0";
+
+   
 }
 
 function affiche_contact(){
@@ -278,7 +312,6 @@ function affiche_contact(){
     //contact
     document.querySelector("#contact").style.pointerEvents="visible";
     document.querySelector("#contact").style.filter="blur(0px)";
-
     //Il faut center et mettre au centre la partie contact
      /* haut | droit | bas | gauche */
     document.querySelector("#competences").style.margin="0 0 50px 25%"; //Ce qui est en haut de la partie concernée
@@ -295,7 +328,22 @@ function affiche_contact(){
     document.querySelector("#apropos1").style.width="62%";
     document.querySelector("#apropos1 h2").style.padding="0 0 0 0";
 
-   
+    document.querySelector("#parcours").style.height="auto";
+    document.querySelector("#parcours").style.padding="0 0 1% 0"; 
+    document.querySelector("#parcours").style.width="62%";
+    document.querySelector("#parcours h2").style.padding="0 0 0 0";
+
+    document.querySelector("#competences").style.height="auto";
+    document.querySelector("#competences").style.padding="0 0 1% 0"; 
+    document.querySelector("#competences").style.width="62%";
+    document.querySelector("#competences h2").style.padding="0 0 0 0";   
+
+    document.querySelector("#contact").style.height="100%";
+    document.querySelector("#contact h2").style.textAlign="center";
+    document.querySelector("#contact").style.margin="-20px 0px 0px 10%"; 
+    // document.querySelector("#contact_me").style.margin="-147px 0 0 549px";
+    document.querySelector("#contact").style.width="82%";
+    //document.querySelector("#infos_complemetaires").style.margin="0 0 0 80px";
 }
 
 function back_accueil(){
@@ -306,3 +354,9 @@ function back_accueil(){
     document.querySelector(".en_tete").style.margin="0 0 0 0"; 
     document.querySelector("#apropos1").style.margin="0 0 0 25%";
 }
+
+// function recup_champ_form(){
+//     // document.forms['dialogbox'].elements['nom'].value="";   
+//     // document.forms['dialogbox'].elements['mail'].value="";   
+//     // document.forms['dialogbox'].elements['message'].value="";
+// }

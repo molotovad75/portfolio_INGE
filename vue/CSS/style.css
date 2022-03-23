@@ -73,12 +73,19 @@ header a.AL{
     position: relative;
 }
 
-#apropos1,#parcours,#competences,#contact, footer p{ /*#infos_complemetaires*/
+#apropos1,#parcours,#competences,#contact, footer p.text{ /*#infos_complemetaires*/
     width: 50%;
     margin-left: 25%;
     padding-bottom: 1%;
 }
 
+footer p.icone{
+    margin: 0;
+}
+
+#contact h2{
+    text-align: center;
+}
 /* Mes initiales dans le header (AL) */
 .lettre_A,.lettre_L{
    font-size: 360px;
@@ -144,7 +151,9 @@ header a.AL{
 
 /*Me contacter*/
 #contact_me{
-    width: 359.6px;margin-left: 320px;margin-top: -149px;   
+    width: 359.6px;
+    margin-left: 600px;
+    margin-top: -149px;   
 }
 
 #contact_me #nom,#contact_me #mail{
@@ -212,15 +221,13 @@ footer p{
 
 @media screen and (max-width:1481.6px) and (max-height:3161.15px){ /* and (min-width:1220.4px) and (min-height:2876.3px)*/
     #contact_me{
-        margin-left: 290px;
+        /* margin-left: 290px; */
+         /* haut | droit | bas | gauche */
+        margin :-149px 0px 0px 600px;
     }
 }
 
 @media screen and (max-width:1220.4px) and (max-height:2876.3px) {
-    #contact_me{
-        margin-left: 300px;
-    }
-
     header a{
         padding-right: 5%;
         padding-left: 5%;
@@ -231,9 +238,13 @@ footer p{
 /* Ce Media queries concerne uniquement l'envoie de message la dialogbox elle est indépendante des autres */
 @media screen and (max-width:1145.6px) and (max-height:2814.92px){
 
-    #contact_me{
+    /* #contact_me{
         margin-left: 0px;
         margin-top: 0px;
+    } */
+
+    #contact_me{
+        margin :0px 0px 0px 0px;
     }
 }
 /***********************************************************************************************************************************/
@@ -292,6 +303,10 @@ footer p{
     #apropos1,#parcours,#competences,#contact{
         width: 500px;
     }
+    #contact_me,#infos_complemetaires{
+        margin :0px 0px 0px 0px;
+    }
+
 
 
 }
