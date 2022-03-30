@@ -100,7 +100,7 @@ footer p.icone{
     position: relative;
 }
 
-.icon{
+.icon{ /*icon */
    display: none;
 }
 #apropos1 h2,#parcours h2,#competences h2{ 
@@ -284,7 +284,7 @@ footer p{
         width: 100%;
     }
 
-    header.responsive a.icon {
+    header.responsive a.icon {/* icon*/
         position: absolute;
         right: 0;
         top: 0;

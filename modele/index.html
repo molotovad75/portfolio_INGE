@@ -12,16 +12,18 @@
 
 	<body>
 		<header id="nav">
+			
 			<a href="index.html" class="AL" onclick="back_accueil()">AL</a>
-			<a href="#resume_downloading" id="lien_head" onclick="affiche_presentation();myFunction();">Présentation</a> 
+			<a href="#resume_downloading" id="lien_head" onclick="affiche_presentation();myFunction(numero);">Présentation</a> 
 			<!-- apropos1 -->
-			<a href="#presentation" id="lien_head" onclick="affiche_parcours();myFunction();">Parcours</a>
+			<a href="#presentation" id="lien_head" onclick="affiche_parcours();myFunction(numero);">Parcours</a>
 			<!-- parcours -->
-			<a href="#expro" id="lien_head" onclick="affiche_competences();myFunction();">Compétences</a>
+			<a href="#expro" id="lien_head" onclick="affiche_competences();myFunction(numero);">Compétences</a>
 			<!-- compétences -->
-			<a href="#space" id="lien_head" onclick="affiche_contact();myFunction();">Contact</a>
-			<!-- contact -->
-			<a href="javascript:void(0);" id="barres" class="icon" onclick="myFunction()" ><i class="fa fa-bars"></i></a>
+			<a href="#space" id="lien_head" onclick="affiche_contact();myFunction(numero);">Contact</a>
+			<!-- contact --><script>let numero=0;</script>
+			<a href="javascript:void(0);" id="barres" class="icon" onclick="myFunction(numero);numero++;" ><i class="fa fa-bars"></i></a>
+			<!-- icon -->
 		</header>
 
 		<!-- recup_champ_form(); -->

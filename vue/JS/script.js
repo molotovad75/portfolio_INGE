@@ -77,17 +77,27 @@ var myRadar2chart= new Chart(getElemChartAutres_compétences,
     }
 );
 
-function myFunction() {
+
+function exec_une_fois(nb_exec, nom_class){
+    let i="nav";
+    nom_class.className=i;
+}
+
+
+
+function myFunction(num) {
+    
     var x = document.getElementById("nav");
+    if(num==0){
+        exec_une_fois(num,x);
+    }
+    
     if (x.className === "nav") {
       x.className += " responsive";
     } else {
       x.className = "nav";
     }
 }
-
-
-
 
 //IL FAUT FINIR LA FONCTION QUI CODE Le menu 
 
